@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				hibachi: {
+					yellow: '#FFD600',
+					orange: '#FF6B00',
+					pink: '#FF1A8C',
+					purple: '#9B87F5',
+					dark: '#0A0A0A',
 				}
 			},
 			borderRadius: {
@@ -84,11 +92,20 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+				'pulse-slow': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.7' },
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-slow': 'pulse-slow 3s ease-in-out infinite',
+			},
+			backgroundImage: {
+				'hibachi-gradient': 'linear-gradient(135deg, #FFD600, #FF6B00, #FF1A8C, #9B87F5)',
+				'hibachi-flame': 'linear-gradient(135deg, #FFD600 0%, #FF6B00 50%, #FF1A8C 100%)',
 			}
 		}
 	},
